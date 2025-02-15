@@ -22,7 +22,6 @@ export class HomeComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-  // Helper method to close all dropdowns immediately
   closeAllDropdownsImmediate() {
     this.isHireOpen = false;
     this.isExtertiseOpen = false;
