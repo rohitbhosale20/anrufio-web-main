@@ -252,84 +252,274 @@
         solutions.
     </p>
 
-    <!-- Tabs Navigation -->
-    <div class="mt-8 flex space-x-6 border-b">
-        <button class="pb-2 text-lg font-semibold border-b-2 border-red-500 text-red-500">Front-End</button>
-        <button class="pb-2 text-lg text-gray-600 hover:text-red-500">Back-End</button>
-        <button class="pb-2 text-lg text-gray-600 hover:text-red-500">Mobile & PWA</button>
-        <button class="pb-2 text-lg text-gray-600 hover:text-red-500">Databases</button>
-        <button class="pb-2 text-lg text-gray-600 hover:text-red-500">Testing & Quality Assurance</button>
-        <button class="pb-2 text-lg text-gray-600 hover:text-red-500">Cloud & DevOps</button>
+    <!-- Category Buttons -->
+    <!-- Category Buttons -->
+    <div class="mt-8 flex space-x-6 border-b overflow-x-auto whitespace-nowrap">
+        <button *ngFor="let category of categories" class="pb-2 text-lg font-semibold" [ngClass]="{
+            'border-b-2 border-red-500 text-red-500': selectedCategory === category,
+            'text-gray-600 hover:text-red-500': selectedCategory !== category
+          }" (click)="selectCategory(category)">
+            {{ category }}
+        </button>
     </div>
 
-    <!-- Technology Grid -->
+    <!-- Technology Cards -->
     <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        <!-- Technology Card -->
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5"
-                class="h-12">
-            <span class="mt-2 text-lg font-medium">HTML5</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3" class="h-12">
-            <span class="mt-2 text-lg font-medium">CSS3</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS"
-                class="h-12">
-            <span class="mt-2 text-lg font-medium">Tailwind CSS</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap"
-                class="h-12">
-            <span class="mt-2 text-lg font-medium">Bootstrap</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"
-                class="h-12">
-            <span class="mt-2 text-lg font-medium">JavaScript</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript"
-                class="h-12">
-            <span class="mt-2 text-lg font-medium">TypeScript</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" alt="Angular"
-                class="h-12">
-            <span class="mt-2 text-lg font-medium">Angular</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS" class="h-12">
-            <span class="mt-2 text-lg font-medium">ReactJS</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Material_Design_Logo.svg" alt="Material-UI"
-                class="h-12">
-            <span class="mt-2 text-lg font-medium">Material-UI</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js" class="h-12">
-            <span class="mt-2 text-lg font-medium">Next.js</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" class="h-12">
-            <span class="mt-2 text-lg font-medium">Vue.js</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="Svelte" class="h-12">
-            <span class="mt-2 text-lg font-medium">Svelte</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Remix_logo.svg" alt="Remix" class="h-12">
-            <span class="mt-2 text-lg font-medium">Remix</span>
-        </div>
-        <div class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Gatsby-Logo.svg" alt="Gatsby.js" class="h-12">
-            <span class="mt-2 text-lg font-medium">Gatsby.js</span>
+        <div *ngFor="let tech of data[selectedCategory]" class="flex flex-col items-center bg-gray-100 p-4 rounded-lg">
+            <a [href]="tech.link" target="_blank" class="flex flex-col items-center">
+                <img [src]="tech.image" [alt]="tech.name"
+                    class="w-12 h-12 object-contain transform transition duration-300 hover:scale-110 mb-4">
+                <span class="text-lg text-gray-900">{{ tech.name }}</span>
+            </a>
         </div>
     </div>
 </section>
+<section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+        <!-- Left Content -->
+        <div>
+            <!-- Small Label -->
+            <p class="text-red-500 font-semibold mb-2">Remote Team</p>
+            <!-- Main Heading -->
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                Build Your Digital Transformation Team in 2 Days
+            </h2>
+            <!-- Subtext -->
+            <p class="mt-4 text-gray-600">
+                Explore the benefits of collaborating with an offshore dedicated team. Get access to expert skills,
+                cost-effective solutions, and custom support for your needs.
+            </p>
+            <!-- Bullet Points -->
+            <ul class="mt-6 space-y-2 list-disc list-inside text-gray-700">
+                <li>2 Weeks free trial</li>
+                <li>Flexible hiring models</li>
+                <li>NDA protected contract</li>
+                <li>IP-Rights Protection</li>
+                <li>Timezone Compatibility</li>
+                <li>Fast & Easy onboarding</li>
+            </ul>
+        </div>
 
+        <!-- Right Form Card -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-xl font-semibold text-gray-900">
+                Get started with our dedicated remote team
+            </h3>
+            <p class="text-gray-500 text-sm mt-1">
+                Partner with Anrufio (Get a free trial for 2 weeks)
+            </p>
+
+            <!-- Form -->
+            <form class="mt-6 space-y-4">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-gray-700 font-medium">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500" />
+                </div>
+                <!-- Company -->
+                <div>
+                    <label for="company" class="block text-gray-700 font-medium">Company</label>
+                    <input type="text" id="company" name="company"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500" />
+                </div>
+                <!-- Email & Phone (optional) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500" />
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone"
+                            class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500" />
+                    </div>
+                </div>
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block text-gray-700 font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4"
+                        class="w-full mt-1 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                </div>
+                <!-- NDA Checkbox -->
+                <div class="flex items-center">
+                    <input type="checkbox" id="nda" name="nda"
+                        class="h-4 w-4 text-red-500 border-gray-300 rounded focus:ring-0" />
+                    <label for="nda" class="ml-2 text-gray-700 text-sm">Send me signed NDA copy</label>
+                </div>
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                    Send Message
+                </button>
+            </form>
+
+            <!-- Note -->
+            <p class="text-gray-500 text-xs mt-3">
+                Note: Please do not use this form for job opportunities. Please see our
+                <a href="#" class="text-red-500 underline">Careers Page</a>.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="bg-[#101820] text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+        <!-- Section Label -->
+        <p class="text-red-500 font-semibold mb-2">Our Track Record</p>
+
+        <!-- Main Heading -->
+        <h2 class="text-3xl md:text-4xl font-bold">
+            Trusted by Hundreds of Businesses Worldwide
+        </h2>
+
+        <!-- Subtext -->
+        <p class="mt-4 text-gray-300 max-w-2xl">
+            Numbers that speak volumes. Our stats reflect your potential for success.
+        </p>
+
+        <!-- Stats -->
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+            <!-- Stat 1 -->
+            <div>
+                <h3 class="text-4xl font-bold">12+</h3>
+                <p class="mt-2 text-gray-400">Years of Experience</p>
+            </div>
+            <!-- Stat 2 -->
+            <div>
+                <h3 class="text-4xl font-bold">200+</h3>
+                <p class="mt-2 text-gray-400">Successful Projects</p>
+            </div>
+            <!-- Stat 3 -->
+            <div>
+                <h3 class="text-4xl font-bold">99.9%</h3>
+                <p class="mt-2 text-gray-400">Client Satisfaction Rate</p>
+            </div>
+            <!-- Stat 4 -->
+            <div>
+                <h3 class="text-4xl font-bold">100+</h3>
+                <p class="mt-2 text-gray-400">Clients Served</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="max-w-6xl mx-auto px-4 py-12">
+    <!-- Section Label -->
+    <p class="text-red-500 font-semibold mb-2">Resources</p>
+    <!-- Main Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Case Studies</h2>
+    <!-- Subtext -->
+    <p class="mt-4 text-gray-600 max-w-2xl">
+        Real impact, remarkable results. Be inspired by our case studies and discover how we can help your business
+        thrive.
+    </p>
+
+    <!-- Featured Case Study -->
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Text Content -->
+        <div>
+            <h3 class="text-xl font-bold text-gray-900">
+                Bluetooth-Enabled Medicine Reminder Mobile Application with IoT Integration
+            </h3>
+            <p class="mt-4 text-gray-600">
+                The mobile app we developed, integrated with an IoT device, simplified medication management and
+                improved health outcomes for patients. Learn how our tailored solutions can revolutionize your approach
+                to medication reminders.
+            </p>
+            <a href="#" class="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                Read Case Study →
+            </a>
+        </div>
+        <!-- Image -->
+        <div>
+            <img src="assets/case-studies/medicine-app.png" alt="Medicine Reminder App"
+                class="w-full h-auto rounded-lg shadow" />
+        </div>
+    </div>
+
+    <!-- Industries / Filters -->
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
+            Insurance
+        </button>
+        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
+            Healthcare
+        </button>
+        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
+            Retail
+        </button>
+        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
+            Finance
+        </button>
+        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg">
+            Sports
+        </button>
+    </div>
+</section>
+<section class="max-w-6xl mx-auto px-4 py-12">
+    <!-- Section Label -->
+    <p class="text-red-500 font-semibold mb-2">Blogs</p>
+
+    <!-- Main Heading -->
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Explore Our Top Trending Articles
+    </h2>
+
+    <!-- Subtext -->
+    <p class="mt-4 text-gray-600 max-w-2xl">
+        Dive into our trending blog posts and stay updated with the latest trends, insights, and expert opinions.
+    </p>
+
+    <!-- Blog Cards -->
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/blogs/react-benefits.png" alt="React Benefits" class="w-full h-40 object-cover rounded" />
+            <h3 class="mt-4 text-xl font-semibold text-gray-900">
+                Top Benefits to Choose React for Your Business
+            </h3>
+            <p class="mt-2 text-gray-600">
+                Here are the key benefits and strategic advantages of using React for your business needs.
+            </p>
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-500">
+                <span>Feb 19, 2025</span>
+                <span>4 min read</span>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/blogs/angular-dynamic-forms.png" alt="Angular Dynamic Forms"
+                class="w-full h-40 object-cover rounded" />
+            <h3 class="mt-4 text-xl font-semibold text-gray-900">
+                Guide to Create Dynamic Forms in Angular
+            </h3>
+            <p class="mt-2 text-gray-600">
+                Learn to create dynamic forms in Angular with step-by-step instructions. Make user interaction easier
+                effortlessly.
+            </p>
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-500">
+                <span>Feb 13, 2025</span>
+                <span>5 min read</span>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/blogs/best-react-ide.png" alt="Best React IDE" class="w-full h-40 object-cover rounded" />
+            <h3 class="mt-4 text-xl font-semibold text-gray-900">
+                9 Best React Development IDE & Editor Tools in 2025
+            </h3>
+            <p class="mt-2 text-gray-600">
+                Here are the 9 best React Development IDEs & Editors you can use in 2025 to increase your coding
+                productivity.
+            </p>
+            <div class="mt-4 flex items-center justify-between text-sm text-gray-500">
+                <span>Feb 11, 2025</span>
+                <span>6 min read</span>
+            </div>
+        </div>
+    </div>
+</section>
 
 <app-footer></app-footer>

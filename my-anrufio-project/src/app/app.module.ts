@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { BlogComponent } from './blog/blog/blog.component';
+import { CaseStudyComponent } from './blog/case-study/case-study.component';
 
 @NgModule({
   declarations: [],
@@ -15,6 +17,8 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
+    BlogComponent,
+    CaseStudyComponent
   ],
   providers: [],
   bootstrap: [],
