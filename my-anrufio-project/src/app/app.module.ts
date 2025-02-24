@@ -7,6 +7,9 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { BlogComponent } from './blog/blog/blog.component';
 import { CaseStudyComponent } from './blog/case-study/case-study.component';
+import { TechnologiesComponent } from './common-component/technologies/technologies.component';
+import { IndustriesComponent } from './common-component/industries/industries.component';
+import { ProductEngineeringServicesComponent } from './our-services/product-engineering-services/product-engineering-services.component';
 
 @NgModule({
   declarations: [],
@@ -18,7 +21,10 @@ import { CaseStudyComponent } from './blog/case-study/case-study.component';
     FooterComponent,
     HeaderComponent,
     BlogComponent,
-    CaseStudyComponent
+    CaseStudyComponent,
+    TechnologiesComponent,
+    IndustriesComponent,
+    ProductEngineeringServicesComponent,
   ],
   providers: [],
   bootstrap: [],

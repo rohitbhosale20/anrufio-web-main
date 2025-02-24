@@ -8,6 +8,12 @@ import { FooterComponent } from '../footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TechnologiesComponent } from '../common-component/technologies/technologies.component';
+import { IndustriesComponent } from '../common-component/industries/industries.component';
+import { RecentBlogComponent } from '../common-component/recent-blog/recent-blog.component';
+import { RecentCaseStudyComponent } from '../common-component/recent-case-study/recent-case-study.component';
+import { RemoteContactUsFormComponent } from '../common-component/remote-contact-us-form/remote-contact-us-form.component';
+import { TrustedBrandsComponent } from '../common-component/trusted-brands/trusted-brands.component';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +23,13 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     RouterModule,
     FooterComponent,
     HeaderComponent,
+    TechnologiesComponent,
     HttpClientModule,
+    IndustriesComponent,
+    RecentBlogComponent,
+    RecentCaseStudyComponent,
+    RemoteContactUsFormComponent,
+    TrustedBrandsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
