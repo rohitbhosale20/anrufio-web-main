@@ -1,22 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FooterComponent } from '../../footer/footer.component';
-import { HeaderComponent } from '../../header/header.component';
 import { BenefitsComponent } from '../../common-component/benefits/benefits.component';
-import { IndustriesComponent } from '../../common-component/industries/industries.component';
+import { BookCallComponent } from '../../common-component/book-call/book-call.component';
 import { EverythingYouNeedComponent } from '../../common-component/everything-you-need/everything-you-need.component';
+import { ExpertiseComponent } from '../../common-component/expertise/expertise.component';
+import { FaqComponent } from '../../common-component/faq/faq.component';
+import { IndustriesComponent } from '../../common-component/industries/industries.component';
+import { OurCollaborationComponent } from '../../common-component/our-collaboration/our-collaboration.component';
 import { TechnologiesComponent } from '../../common-component/technologies/technologies.component';
 import { TestimonialComponent } from '../../common-component/testimonial/testimonial.component';
-import { OurCollaborationComponent } from '../../common-component/our-collaboration/our-collaboration.component';
-import { BookCallComponent } from '../../common-component/book-call/book-call.component';
-import { FaqComponent } from '../../common-component/faq/faq.component';
+import { FooterComponent } from '../../footer/footer.component';
+import { HeaderComponent } from '../../header/header.component';
 import { HttpClient } from '@angular/common/http';
 import { FAQSection } from '../../common-component/faq/faq.models';
-import { ExpertiseComponent } from '../../common-component/expertise/expertise.component';
+import { OurAiDevelopmentProcessComponent } from '../../common-component/our-ai-development-process/our-ai-development-process.component';
 
 @Component({
-  selector: 'app-product-engineering-services',
+  selector: 'app-generative-ai-development',
   standalone: true,
   imports: [
     CommonModule,
@@ -32,21 +33,21 @@ import { ExpertiseComponent } from '../../common-component/expertise/expertise.c
     BookCallComponent,
     FaqComponent,
     ExpertiseComponent,
+    OurAiDevelopmentProcessComponent,
   ],
-
-  templateUrl: './product-engineering-services.component.html',
-  styleUrl: './product-engineering-services.component.css',
+  templateUrl: './generative-ai-development.component.html',
+  styleUrl: './generative-ai-development.component.css',
 })
-export class ProductEngineeringServicesComponent {
+export class GenerativeAiDevelopmentComponent {
   faqData!: FAQSection;
   content: any;
   benefitsData: any;
+  aiProcess: any;
   bookCall: any;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    // Load FAQ data
     this.http.get<FAQSection>('assets/json/product-engeering.json').subscribe({
       next: (data) => {
         this.faqData = data;
@@ -56,8 +57,7 @@ export class ProductEngineeringServicesComponent {
       },
     });
 
-    // Load Expertise content
-    this.http.get('assets/json/product-expertise.json').subscribe({
+    this.http.get('assets/json/generative-ai-development.json').subscribe({
       next: (data) => {
         this.content = data;
       },
@@ -65,9 +65,7 @@ export class ProductEngineeringServicesComponent {
         console.error('Error loading expertise content:', error);
       },
     });
-
-    // Load Benefits data
-    this.http.get('assets/json/product-benefits.json').subscribe({
+    this.http.get('assets/json/gen-ai-benefits.json').subscribe({
       next: (data) => {
         this.benefitsData = data;
       },
@@ -75,7 +73,15 @@ export class ProductEngineeringServicesComponent {
         console.error('Error loading benefits data:', error);
       },
     });
-    this.http.get('assets/json/book-call.json').subscribe({
+    this.http.get('assets/json/ai-development-process.json').subscribe({
+      next: (data) => {
+        this.aiProcess = data;
+      },
+      error: (error) => {
+        console.error('Error loading benefits data:', error);
+      },
+    });
+    this.http.get('assets/json/book-call-ai.json').subscribe({
       next: (data) => {
         this.bookCall = data;
       },
@@ -89,3 +95,4 @@ export class ProductEngineeringServicesComponent {
     console.log('FAQ clicked:', faq);
   }
 }
+

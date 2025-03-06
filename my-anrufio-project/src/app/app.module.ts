@@ -11,6 +11,7 @@ import { TechnologiesComponent } from './common-component/technologies/technolog
 import { IndustriesComponent } from './common-component/industries/industries.component';
 import { ProductEngineeringServicesComponent } from './our-services/product-engineering-services/product-engineering-services.component';
 
+
 @NgModule({
   declarations: [],
   imports: [

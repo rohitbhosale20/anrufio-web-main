@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -9,4 +9,11 @@ import { RouterModule } from '@angular/router';
   templateUrl: './book-call.component.html',
   styleUrl: './book-call.component.css',
 })
-export class BookCallComponent {}
+export class BookCallComponent {
+  @Input() data: any;
+  @Output() bookCallClicked = new EventEmitter<void>();
+
+  onBookCallClick() {
+    this.bookCallClicked.emit();
+  }
+}

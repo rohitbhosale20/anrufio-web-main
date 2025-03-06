@@ -1,19 +1,18 @@
-<section class="relative bg-[url('assets/service/project-sucess.jpg')] bg-cover bg-center text-white py-12">
-    <!-- Overlay for better text contrast -->
+<section class="relative bg-cover bg-center text-white py-12"
+    [ngStyle]="{'background-image': 'url(' + data.backgroundImage + ')'}">
     <div class="absolute inset-0 bg-[#101820] opacity-70"></div>
-
     <div class="relative max-w-6xl mx-auto px-4 text-center md:text-left">
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">
-            Need A Developers who Will Make Your Project a Success?
+            {{ data.title }}
         </h2>
         <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
-            Angular Minds has a perfect blend of developers who can manage your project from start to finish. Choose us
-            and drive the success of your business.
+            {{ data.description }}
         </p>
         <div class="mt-6">
-            <a href="#"
-                class="inline-block bg-red-500 text-white font-semibold px-6 py-3 rounded hover:bg-red-600 transition">
-                Book A Call
+            <a [routerLink]="data.btnLink" (click)="onBookCallClick()"
+                class="inline-block text-white font-semibold px-6 py-3 rounded transition"
+                [ngClass]="[data.btnColor, data.btnHoverColor]">
+                {{ data.btnText }}
             </a>
         </div>
     </div>
