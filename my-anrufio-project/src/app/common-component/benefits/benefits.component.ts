@@ -11,4 +11,6 @@ import { RouterModule } from '@angular/router';
 })
 export class BenefitsComponent {
   @Input() data: any;
+  @Input() showButton: boolean = false;
+
 }
