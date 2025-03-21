@@ -12,6 +12,8 @@ import { FooterComponent } from '../../footer/footer.component';
 import { FaqComponent } from '../../common-component/faq/faq.component';
 import { FAQSection } from '../../common-component/faq/faq.models';
 import { RecentBlogComponent } from '../../common-component/recent-blog/recent-blog.component';
+import { TrustedByWorldsComponent } from "../../common-component/trusted-by-worlds/trusted-by-worlds.component";
+import { TrustedBrandsComponent } from "../../common-component/trusted-brands/trusted-brands.component";
 interface HireData {
   tagline: string;
   title: string;
@@ -20,8 +22,8 @@ interface HireData {
 }
 @Component({
   selector: 'app-hire-offshore-full-stack-developers',
-  imports: [RemoteContactUsFormComponent,HeaderComponent, CommonModule,
-      RouterModule,BenefitsComponent,TechnologiesComponent,DedicatedExpertiseComponent,TestimonialComponent,FooterComponent,FaqComponent,RecentBlogComponent],
+  imports: [RemoteContactUsFormComponent, HeaderComponent, CommonModule,
+    RouterModule, BenefitsComponent, TechnologiesComponent, DedicatedExpertiseComponent, TestimonialComponent, FooterComponent, FaqComponent, RecentBlogComponent, TrustedByWorldsComponent, TrustedBrandsComponent],
   templateUrl: './hire-offshore-full-stack-developers.component.html',
   styleUrl: './hire-offshore-full-stack-developers.component.css'
 })

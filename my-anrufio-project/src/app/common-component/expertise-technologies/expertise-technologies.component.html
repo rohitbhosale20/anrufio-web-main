@@ -1,0 +1,47 @@
+<section class="max-w-6xl mx-auto px-4 py-12 h-auto md:h-[600px]">
+    <div class="flex flex-col-reverse md:flex-row h-full md:gap-20 items-center">
+        <!-- Left Content --> 
+        <div class="w-full md:w-1/2 text-center md:text-left " >
+            <p class="font-semibold mb-2" data-aos="zoom-in" [ngStyle]="{'color': data?.taglineColor}">
+                {{ data?.tagline }}
+            </p>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight" data-aos="zoom-in">
+                {{ data?.title }}
+            </h2>
+            <p class="mt-4 text-gray-600 max-w-xl mx-auto md:mx-0" data-aos="zoom-in">
+                {{ data?.description }}
+            </p>
+            <div class="mt-6 flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4" data-aos="zoom-in">
+                <!-- Get Started Button -->
+                <a [href]="data?.buttons[0]?.link" 
+                   class="px-6 py-3 text-white bg-gradient-to-r from-red-500 to-purple-600 rounded-lg shadow-lg font-semibold transition duration-300 flex items-center justify-center md:justify-start space-x-2 group">
+                    <span>{{ data?.buttons[0]?.text }}</span>
+                    <span class="relative">
+                        <span class="text-lg transition-opacity duration-300 group-hover:opacity-0">></span>
+                        <span class="text-lg absolute left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">→</span>
+                    </span>
+                </a>
+
+                <!-- Book a Call Button (Underline on Hover) -->
+                <a [href]="data?.buttons[1]?.link" 
+                   class="text-pink-600 font-semibold relative group flex items-center space-x-2">
+                    <span>{{ data?.buttons[1]?.text }}</span>
+                    <span class="relative">
+                        <span class="text-lg transition-opacity duration-300 group-hover:opacity-0">></span>
+                        <span class="text-lg absolute left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">→</span>
+                    </span>
+                    <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-pink-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center"  data-aos="zoom-in">
+            <img *ngIf="data?.image?.src" [src]="data?.image?.src" [alt]="data?.image?.alt" 
+                 class="w-80 md:w-[450px]">
+        </div>
+    </div>
+</section>
+
+
+<app-trusted-by-worlds ></app-trusted-by-worlds>

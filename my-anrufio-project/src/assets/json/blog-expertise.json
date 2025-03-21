@@ -1,0 +1,23 @@
+    [{
+      "image": "https://s3.amazonaws.com/angularminds.com/blog/cta/what-are-angular-signal-components-how-do-they-work-1958e5bf5b6.webp",
+      "title": "Top Benefits to Choose React for Your Business",
+      "description": "Here are the key benefits and strategic advantages of using React for your business needs.",
+      "date": "Feb 19, 2025",
+      "readTime": "4 min read"
+    },
+    {
+      "image": "https://s3.amazonaws.com/angularminds.com/blog/cta/dynamic-forms-in-angular-1951340a648.webp",
+      "title": "Guide to Create Dynamic Forms in Angular",
+      "description": "Learn to create dynamic forms in Angular with step-by-step instructions. Make user interaction easier effortlessly.",
+      "date": "Feb 13, 2025",
+      "readTime": "5 min read"
+    },
+    {
+      "image": "https://s3.amazonaws.com/angularminds.com/blog/cta/understanding-modular-architecture-in-angular-a-practical-guide-194e04aa119.webp",
+      "title": "9 Best React Development IDE & Editor Tools in 2025",
+      "description": "Here are the 9 best React Development IDEs & Editors you can use in 2025 to increase your coding productivity.",
+      "date": "Feb 11, 2025",
+      "readTime": "6 min read"
+    }
+  
+]

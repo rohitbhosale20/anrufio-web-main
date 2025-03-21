@@ -1,0 +1,30 @@
+<section *ngIf="deploymentData" class="max-w-7xl mx-auto px-12 py-12 grid md:grid-cols-2 gap-12 items-start">
+    <!-- Left Content -->
+    <div class="space-y-6">
+      <h2 class="text-xl font-bold text-pink-600">{{ deploymentData.title }}</h2>
+      <h1 class="text-4xl font-bold text-gray-900">
+        {{ deploymentData.heading }}
+      </h1>
+      <p class="text-gray-600">
+        {{ deploymentData.description }}
+      </p>
+      <div class="space-y-4">
+        <div *ngFor="let feature of deploymentData.features" class="flex items-start space-x-4">
+          <span class="text-red-500">{{ feature.icon }}</span>
+          <p><strong>{{ feature.title }}:</strong> {{ feature.description }}</p>
+        </div>
+      </div>
+      <button class="bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg">
+        Let's discuss your idea →
+      </button>
+    </div>
+  
+    <!-- Right Content (Scrollable Cards with Hidden Scrollbar) -->
+    <div class="space-y-6 h-[600px] overflow-y-auto pr-4 scrollbar-hide">
+      <div *ngFor="let card of deploymentData.cards" class="bg-white shadow-lg rounded-lg p-6">
+        <img [src]="card.image" [alt]="card.title" class="w-full rounded-lg">
+        <h3 class="text-lg font-bold mt-4">{{ card.title }}</h3>
+        <p class="text-gray-600 mt-2">{{ card.description }}</p>
+      </div>
+    </div>
+</section>

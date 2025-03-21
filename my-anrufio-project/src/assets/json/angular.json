@@ -1,0 +1,155 @@
+{
+  "title": "Top Angular Development Company",
+  "tagline": "Powerful Angular Solutions",
+  "description": "Build future-ready software solutions with the top Angular web development company in India and the USA.",
+  "buttons": [
+    {
+      "text": "Get Started",
+      "link": "#",
+      "class": "px-6 py-3 text-white bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg shadow-lg"
+    },
+    {
+      "text": "Book a call with our CEO",
+      "link": "#",
+      "class": "text-pink-600 font-medium hover:underline"
+    }
+  ],
+  "image": {
+    "src": "assets/icons/angular.svg",
+    "alt": "Angular Logo"
+  },
+  "pwaServices": {
+    "tagline": "Angular Expertise",
+    "title": "Angular Development Services",
+    "description": "We offer a complete range of AngularJS web development and software development services that are customized to meet the specific requirements of your business. Our expert AngularJS developers specialize in creating software using the Angular framework that prioritizes continuous improvement, cross-platform development, and ensures efficient post-deployment maintenance and support.",
+    "services": [
+      {
+        "icon": "✨",
+        "category": "Custom Solutions",
+        "title": "Custom Angular Application Development",
+        "description": "Our experienced AngularJS developers craft personalized applications that align with your business goals and requirements."
+      },
+      {
+        "icon": "💡",
+        "category": "Expert Consulting",
+        "title": "AngularJS Consulting",
+        "description": "Effective advice and guidance from expert Angular consultants to improve your Angular project."
+      },
+      {
+        "icon": "💻",
+        "category": "Seamless Migration",
+        "title": "Angular Migration and Upgrade Services",
+        "description": "We provide seamless migration and upgrading of your Angular applications to ensure better performance and scalability."
+      },
+      {
+        "icon": "🚀",
+        "category": "Enhanced App Speed",
+        "title": "Angular Performance Optimization",
+        "description": "We optimize Angular applications for high-speed performance and efficiency."
+      },
+      {
+        "icon": "👥",
+        "category": "Team Extension",
+        "title": "Dedicated Angular Resources",
+        "description": "We provide dedicated Angular developers to support your project and enhance development capabilities."
+      }
+    ]
+  },
+  "deployment": {
+    "title": "Faster Deployment",
+    "heading": "Deploy Faster With Our Production Ready Full Stack Apps",
+    "description": "Experience highly scalable and dynamic applications built using our carefully curated tech stacks. Leverage our well-researched starter architecture, giving you a head start into your project.",
+    "features": [
+      {
+        "icon": "🔥",
+        "title": "Full Stack Development",
+        "description": "Benefit from our comprehensive full-stack approach."
+      },
+      {
+        "icon": "📚",
+        "title": "Well-Researched Starter Architecture",
+        "description": "Save development time."
+      },
+      {
+        "icon": "⚡",
+        "title": "High Performance",
+        "description": "Optimized for speed and responsiveness."
+      }
+    ],
+    "cards": [
+      {
+        "image": "https://www.angularminds.com/tech-banners/angular-mongodb-nodejs-express-mean-stack.svg",
+        "title": "Scalability with MEAN Stack (Angular + NodeJS + Express + MongoDB)",
+        "description": "Experience the robustness of the MEAN stack, as we make use of Angular, NodeJS, Express, and MongoDB to create highly scalable applications."
+      },
+      {
+        "image": "https://www.angularminds.com/tech-banners/angular-firebase-tech-stack.svg",
+        "title": "Serverless Architecture with Angular + Firebase",
+        "description": "Utilize the benefits of serverless architecture with Angular and Firebase. Enjoy real-time functionality, secure authentication, and effortless data storage."
+      },
+      {
+        "image": "https://www.angularminds.com/tech-banners/angular-dot-net-core-sql-server-tech-stack.svg",
+        "title": "Enterprise Solutions with Angular + .NET Core + Microsoft SQL Server",
+        "description": "For robust and enterprise-level solutions, we combine Angular, .NET Core, and Microsoft SQL Server."
+      },
+      {
+        "image": "https://www.angularminds.com/tech-banners/angular-ionic-tech-stack.svg",
+        "title": "Cross-Platform Mobile Apps with Angular + Ionic",
+        "description": "Reach a wider audience with cross-platform mobile development using Angular and Ionic."
+      }
+    ]
+  },
+  "coreCompetencies": {
+    "head":"Angular Excellence Unleashed",
+    "heading": "Our Angular Core Competencies",
+    "subheading": "At Angular Minds, we have a strong skill set in various JavaScript frameworks, enabling us to develop applications with excellent performance, security, and user experience.",
+    "items": [
+        {
+          "title": "Angular Material",
+          "description": "We utilize the exceptional features of Angular Material, a complete UI component library, to create visually dynamic and responsive user interfaces. Utilizing its vast collection of customizable components, we deliver intuitive and polished experiences that meet end users' expectations.",
+          "icon": "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg"
+        },
+        {
+          "title": "Angular Universal for SSR",
+          "description": "We use Angular Universal for server-side rendering (SSR), which further optimizes your application's performance and user experience. This technique ensures faster initial page loads, improves search engine visibility, and provides an uninterrupted experience for users.",
+          "icon": "https://cdn-icons-png.flaticon.com/128/1042/1042115.png"
+        },
+        {
+          "title": "RuJS and NgRx",
+          "description": "Our main focus is to create reactive, high-performing, and scalable applications. To facilitate this, we use RuJS and NgRx. These libraries allow us to handle complex data streams, effectively manage application states, and build responsive interfaces that improve user engagement.",
+          "icon": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
+        },
+        {
+          "title": "Internationalization",
+          "description": "We enable internationalization (i18n) within your Angular applications, ensuring easy translation and localization. By engaging a diverse audience, we help you reach a global user base effectively, focusing on engagement and user satisfaction.",
+          "icon": "https://cdn-icons-png.flaticon.com/128/1042/1042115.png"
+        },
+        {
+          "title": "NG Bootstrap",
+          "description": "To enhance the visual appearance and responsiveness of your applications, we integrate NG Bootstrap, a library based on Bootstrap. This ensures perfect compatibility across devices and screen sizes and provides an optimal user experience across platforms.",
+          "icon": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
+        },
+        {
+          "title": "D3 for Reporting",
+          "description": "Utilizing D3, a powerful data visualization library, we bring your data to life through stunning and interactive reports. By transforming complex data into visually engaging visuals, we enable you to gain meaningful insights and make informed decisions.",
+          "icon": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
+        },
+        {
+          "title": "Jasmine & Karma for Unit Testing",
+          "description": "Our continuous approach to quality assurance includes using Jasmine and Karma for thorough unit testing. We carefully test individual components and workflows, ensuring the stability of your application and that every single component works efficiently.",
+          "icon": "https://cdn-icons-png.flaticon.com/128/1042/1042115.png"
+        },
+        {
+          "title": "Cypress & Protractor for End-to-End Testing",
+          "description": "We use Cypress and Protractor for complete end-to-end (e2e) testing, simulating real-world user interactions. This holistic process integrates various scenarios, providing a flawless user experience.",
+          "icon": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
+        },
+        {
+          "title": "Kendo UI",
+          "description": "Kendo UI for Angular is a powerful library that offers a comprehensive set of UI components and data visualization tools for building modern web applications. Kendo UI provides the tools and flexibility to enhance the application and deliver high-quality applications.",
+          "icon": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
+        }
+      ]
+  }
+  
+}

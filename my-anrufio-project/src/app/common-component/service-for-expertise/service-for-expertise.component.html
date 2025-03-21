@@ -1,0 +1,33 @@
+<section class="py-16 px-8">
+    <div class="max-w-7xl mx-auto text-left">
+        <h3 class="text-green-600 font-semibold">{{ pwaServices?.tagline }}</h3>
+        <h2 class="text-4xl font-bold mt-2">{{ pwaServices?.title }}</h2>
+        <p class="mt-4 text-gray-600 max-w-3xl">
+            {{ pwaServices?.description }}
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 max-w-7xl mx-auto">
+        <!-- Static Card -->
+       
+        <!-- Dynamic Cards --><div *ngFor="let service of pwaServices?.services" 
+     class="p-8 border rounded-lg shadow-sm transition-all duration-300 hover:bg-gray-100 group relative overflow-hidden h-64 flex flex-col justify-start w-full">
+
+            
+            <div class="flex items-center gap-2 transition-all duration-300 group-hover:translate-y-[-20px] group-hover:mb-8">
+                <span class="text-xl transition-all duration-300 group-hover:text-green-500 group-hover:scale-75">
+                    {{ service.icon }}
+                </span>
+                <h4 class="font-semibold text-green-600 transition-all duration-300 group-hover:scale-75">
+                    {{ service.category }}
+                </h4>
+            </div>
+            <h3 class="text-lg font-bold mt-2 transition-all duration-300 group-hover:translate-y-[-20px]">
+                {{ service.title }}
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm absolute bottom-[-50px] opacity-0 group-hover:opacity-100 group-hover:bottom-6 transition-all duration-300">
+                {{ service.description }}
+            </p>
+        </div>
+    </div>
+</section>
