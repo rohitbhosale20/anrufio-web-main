@@ -41,15 +41,15 @@ export class ReactComponent {
         console.error("Error loading JSON:", error);
       }
     );
-
-    this.http.get('assets/json/book-call-expertise.json').subscribe({
-      next: (data) => {
-        this.bookCall = data;
+    this.http.get('assets/json/react.json').subscribe({
+      next: (data: any) => {
+        this.bookCall = data.projects;  // Fix the typo
       },
       error: (error) => {
-        console.error('Error loading benefits data:', error);
+        console.error('Error loading projects data:', error);
       },
     });
+    
     this.http.get('assets/json/blog-expertise.json').subscribe({
       next: (data) => {
         this.blogPosts = data;

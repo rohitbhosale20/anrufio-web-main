@@ -168,8 +168,22 @@
           "icon": "https://cdn-icons-png.flaticon.com/128/919/919835.png"
         }
       ]
+    },
+    
+  "projects": [
+   
+    {
+      "backgroundImage": "assets/icons/image.png",
+      "title": "Start Your ReactJS Project Today",
+      "description": "Our expert team is ready to turn your ideas into innovative digital solutions. Let's build something amazing together!",
+      "btnText": "Book A Call",
+      "btnLink": "/contact",
+      "btnColor": "bg-white text-blue-800",
+      "btnHoverColor": "hover:bg-blue-700 hover:text-white",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
     }
- 
+  ]
+
 
   }
   

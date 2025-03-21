@@ -150,6 +150,19 @@
           "icon": "https://cdn-icons-png.flaticon.com/128/919/919825.png"
         }
       ]
-  }
+  },
+  "projects": [
+    {
+      "backgroundImage": "assets/icons/converted_image.jpg",
+      "title": "Start Your Angular Project Today",
+      "description": "Our expert team is ready to turn your ideas into innovative digital solutions. Let's build something amazing together!",
+      "btnText": "Book A Call",
+      "btnLink": "/contact",
+      "btnColor": "bg-red-600 text-white",
+      "btnHoverColor": "hover:bg-red-700 hover:text-white",
+      "logo": "assets/icons/angular.svg"
+    }
+  ]
+
   
 }
