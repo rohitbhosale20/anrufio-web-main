@@ -7,8 +7,8 @@
       {
         "text": "Get Started",
         "link": "#",
-        "backgroundColor": "#0d6efd",
-        "textColor": "#ffffff"
+       "color": "linear-gradient(to right, #0079c1, #005b9a)"
+
       },
       {
         "text": "Book a call with our CEO",
@@ -170,8 +170,7 @@
       ]
     },
     
-  "projects": [
-   
+"projects": [
     {
       "backgroundImage": "assets/icons/image.png",
       "title": "Start Your ReactJS Project Today",
@@ -180,6 +179,7 @@
       "btnLink": "/contact",
       "btnColor": "bg-white text-blue-800",
       "btnHoverColor": "hover:bg-blue-700 hover:text-white",
+      "bgColor": "#2563eb", 
       "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
     }
   ]

@@ -18,7 +18,7 @@ import { OurAiDevelopmentProcessComponent } from "../../common-component/our-ai-
 
 @Component({
   selector: 'app-angular',
-  imports: [ExpertiseTechnologiesComponent, HeaderComponent, FooterComponent, ServiceForExpertiseComponent, FullStackDevelopmentComponent, QualityDrivenProficiencyComponent, TechnologiesComponent, TestimonialComponent, BenefitsComponent, BenefitsComponent, FaqComponent, BookCallComponent, BookCallComponent, BlogComponent, RecentBlogComponent, OurAiDevelopmentProcessComponent],
+  imports: [ExpertiseTechnologiesComponent, HeaderComponent, FooterComponent, ServiceForExpertiseComponent, FullStackDevelopmentComponent, QualityDrivenProficiencyComponent, TestimonialComponent, BenefitsComponent, BenefitsComponent, FaqComponent, BookCallComponent, BookCallComponent, RecentBlogComponent],
   templateUrl: './angular.component.html',
   styleUrl: './angular.component.css'
 })

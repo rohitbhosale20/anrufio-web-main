@@ -1,6 +1,9 @@
-<section *ngFor="let item of data" class="relative bg-cover bg-center text-white py-12"
+<section *ngFor="let item of data" 
+    class="relative bg-cover bg-center text-white py-12" 
     [ngStyle]="{'background-image': 'url(' + item.backgroundImage + ')'}">
-    <div class="absolute inset-0 bg-red-800 bg-opacity-80"></div>
+    
+    <!-- Dynamic Background Overlay -->
+    <div class="absolute inset-0" [ngStyle]="{'background-color': item.bgColor, 'opacity': '0.8'}"></div>
     
     <div class="relative max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start">
         <!-- Left Side: Text Content -->
@@ -13,8 +16,8 @@
             </p>
             <div class="mt-6">
                 <a [routerLink]="item.btnLink" (click)="onBookCallClick()"
-                    class="inline-block bg-white text-red-800 font-semibold px-6 py-3 rounded shadow-lg transition 
-                    hover:bg-red-700 hover:text-white">
+                    class="inline-block font-semibold px-6 py-3 rounded shadow-lg transition"
+                    [ngClass]="[item.btnColor, item.btnHoverColor]">
                     {{ item.btnText }}
                 </a>
             </div>

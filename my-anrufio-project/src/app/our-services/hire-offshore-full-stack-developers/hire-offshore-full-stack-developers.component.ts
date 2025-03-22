@@ -23,7 +23,7 @@ interface HireData {
 @Component({
   selector: 'app-hire-offshore-full-stack-developers',
   imports: [RemoteContactUsFormComponent, HeaderComponent, CommonModule,
-    RouterModule, BenefitsComponent, TechnologiesComponent, DedicatedExpertiseComponent, TestimonialComponent, FooterComponent, FaqComponent, RecentBlogComponent, TrustedByWorldsComponent, TrustedBrandsComponent],
+    RouterModule, BenefitsComponent, TechnologiesComponent, DedicatedExpertiseComponent, TestimonialComponent, FooterComponent, FaqComponent, RecentBlogComponent, TrustedByWorldsComponent],
   templateUrl: './hire-offshore-full-stack-developers.component.html',
   styleUrl: './hire-offshore-full-stack-developers.component.css'
 })

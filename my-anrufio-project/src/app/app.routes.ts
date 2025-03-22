@@ -49,7 +49,7 @@ export const routes: Routes = [
     path: 'react',
     component: ReactComponent,
   },{
-    path: 'Veujs',
+    path: 'Vuejs',
     component: VeujsComponent,
   },{
     path: 'Nodejs',
@@ -60,6 +60,10 @@ export const routes: Routes = [
   },{
     path: 'Python',
     component: PythonComponent,
+  },
+  {
+    path: 'Flutter',
+    component: FlutterComponent,
   }
   ,{
     path: 'Java',

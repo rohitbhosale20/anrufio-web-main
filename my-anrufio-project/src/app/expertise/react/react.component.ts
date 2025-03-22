@@ -18,7 +18,7 @@ import { FAQSection } from '../../common-component/faq/faq.models';
 
 @Component({
   selector: 'app-react',
-  imports: [ExpertiseTechnologiesComponent, HeaderComponent, FooterComponent, ServiceForExpertiseComponent, FullStackDevelopmentComponent, QualityDrivenProficiencyComponent, TechnologiesComponent, TestimonialComponent, BenefitsComponent, BenefitsComponent, FaqComponent, BookCallComponent, BookCallComponent, BlogComponent, RecentBlogComponent, OurAiDevelopmentProcessComponent],
+  imports: [ExpertiseTechnologiesComponent, HeaderComponent, FooterComponent, ServiceForExpertiseComponent, FullStackDevelopmentComponent, QualityDrivenProficiencyComponent, TestimonialComponent, BenefitsComponent, BenefitsComponent, FaqComponent, BookCallComponent, BookCallComponent, RecentBlogComponent],
   templateUrl: './react.component.html',
   styleUrl: './react.component.css'
 })

@@ -6,13 +6,16 @@
     {
       "text": "Get Started",
       "link": "#",
-      "class": "px-6 py-3 text-white bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg shadow-lg"
+     "color": "linear-gradient(to right, #ff004f, #7a00ff)"
+
     },
     {
       "text": "Book a call with our CEO",
       "link": "#",
-      "class": "text-pink-600 font-medium hover:underline"
+      "textColor": "#d9006c",
+      "hoverUnderline": true
     }
+    
   ],
   "image": {
     "src": "assets/icons/angular.svg",
@@ -160,6 +163,7 @@
       "btnLink": "/contact",
       "btnColor": "bg-red-600 text-white",
       "btnHoverColor": "hover:bg-red-700 hover:text-white",
+      "bgColor": "#8B0000",
       "logo": "assets/icons/angular.svg"
     }
   ]
