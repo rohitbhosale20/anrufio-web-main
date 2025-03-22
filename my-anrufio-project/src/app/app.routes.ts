@@ -76,7 +76,7 @@ export const routes: Routes = [
     component: SeverlessComponent,
   }
   ,{
-    path: 'Reactive Native',
+    path: 'React-Native',
     component: ReactNativeComponent,
   },{
     path: 'Nextjs',

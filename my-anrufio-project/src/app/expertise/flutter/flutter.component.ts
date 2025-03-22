@@ -15,7 +15,7 @@ import { HeaderComponent } from '../../header/header.component';
 
 @Component({
   selector: 'app-flutter',
-  imports: [ExpertiseTechnologiesComponent, HeaderComponent, FooterComponent, ServiceForExpertiseComponent, FullStackDevelopmentComponent, QualityDrivenProficiencyComponent, TestimonialComponent, BenefitsComponent, BenefitsComponent, FaqComponent, BookCallComponent, BookCallComponent, RecentBlogComponent],
+  imports: [ExpertiseTechnologiesComponent, HeaderComponent, FooterComponent, ServiceForExpertiseComponent, FullStackDevelopmentComponent, QualityDrivenProficiencyComponent, TestimonialComponent, FaqComponent, BookCallComponent, BookCallComponent, RecentBlogComponent],
   templateUrl: './flutter.component.html',
   styleUrl: './flutter.component.css'
 })

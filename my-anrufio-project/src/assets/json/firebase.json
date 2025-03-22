@@ -1,0 +1,192 @@
+{
+    "intro": {
+        "tagline": "Competitive Advantage",
+        "taglineColor": "#6A0DAD",
+        "title": "The Competitive Edge Angular Minds Provide to Clients",
+        "description": "To curate an impactful PWA, you need an organization that will provide end-to-end support, strategic solutions, expertise, and domain knowledge in the particular niche. Angular Minds is future-ready to deliver digital velocity for your project and make it an ROI-generating business."
+      },
+      "benefits": [
+        {
+          "iconPath": "assets/tickpurple.svg",
+          "title": "Experienced Developers",
+          "description": "The creation of any project is successful if we have the right skills and experienced developers. Therefore, our developers substantially have 5 years of experience in all the needed technologies. Once your project is in our hands, our team ensures its success, keeping in mind a faster time to market and user experience."
+        },
+        {
+          "iconPath": "assets/tickpurple.svg",
+          "title": "Global Client Base",
+          "description": "Our experience imbibes agile methodology and efficient systems with a proven track record of delivering digital excellence. We've helped businesses of all sizes around the world cost-effectively achieve success with PWAs. Additionally, given our experience with global partners, we have collected the required expertise to solve all your critical technological challenges."
+        },
+        {
+          "iconPath": "assets/tickpurple.svg",
+          "title": "NDA and IPR Protected",
+          "description": "We know the risks and challenges of jeopardized security and intellectual property rights. So, we comprehensively initiate the process by signing a non-disclosure agreement to ensure the protection of your rights. Our team abides by strict NDA policies and takes data security extremely seriously."
+        },
+        {
+          "iconPath": "assets/tickpurple.svg",
+          "title": "Start-up and SME-friendly",
+          "description": "Whether you are a mid-sized enterprise or a budding startup, we are here to help you irrespective of the size of an organization. Web application technology is a need of the day and all companies require it. Angular Minds is startup and SME-supportive, giving you the digital leverage you need to move forward in your business."
+        }
+         ]
+     ,
+     "tagline": "Powerful PWA Solutions",
+     "title": "Your One-Stop PWA Development Company",
+     "description": "In the mobile-first era, innovative technologies like Progressive Web Applications are the most reliable solutions. Our team of developers acquaints clients with cutting-edge technologies and best-in-class consulting services for their projects.",
+     "buttons": [
+       {
+         "text": "Get Started",
+         "link": "#",
+         "color": "linear-gradient(to right, #6A0DAD, #4B0082)"
+       },
+       {
+         "text": "Book a call with our CEO",
+         "link": "#",
+         "textColor": "#6A0DAD",
+         "fontWeight": "bold",
+         "hoverUnderline": true
+       } ],
+    "image": {
+      "src": "https://www.angularminds.com/tech-logos/pwa.svg",
+      "alt": "pwa Logo"
+    },
+    "pwaServices": {
+        "tagline": "PWA Expertise",
+        "title": "Top Notch PWA Development Services",
+        "description": "Angular Minds’ PWA development services are",
+        "services": [
+          {
+            "icon": "✨",
+            "category": "Custom Solutions",
+            "title": "Custom PWA Application Development",
+            "description": "Our team specializes in creating custom progressive web app development. We create these web apps achieving almost all of the client requirements and overcoming all possible challenges including custom features, functionalities, and integrations."
+          },
+          {
+            "icon": "💡",
+            "category": "Expert Consulting",
+            "title": "PWA Consulting",
+            "description": "Our domain knowledge will give you an edge in making strategic decisions regarding your application."
+          },
+          {
+            "icon": "💻",
+            "category": "Seamless Migration",
+            "title": "PWA Migration and Porting Services",
+            "description": "Migrating your existing web and mobile application has now become seamless with our team of PWA developers."
+          },
+          {
+            "icon": "🚀",
+            "category": "Enhanced App Speed",
+            "title": "Cross-Platform App Development",
+            "description": "PWA's single codebase is an excellent choice for building applications that run smoothly cross-platform."
+          },
+          {
+            "icon": "👥",
+            "category": "Team Extension",
+            "title": "Dedicated PWA Resources",
+            "description": "Onboard our developers within 2 days. "
+          }
+            ]
+      
+    }
+  ,
+      "deployment": {
+        "title": "Full Stack Development",
+        "heading": "Build Your PWA With Our Full Stack Expert Team",
+        "description": "With our carefully tailored tech stack, experience the performance and scalability of your application. We ensure you witness the difference in performance, UI and UX, and maintainability.",
+        "features": [
+          {
+            "icon": "💻",
+            "title": "Full Stack Development",
+            "description": "Benefit from our extensive full-stack approach, covering front-end and back-end technologies."
+          },
+          {
+            "icon": "📚",
+            "title": "Well-Researched Starter Architecture",
+            "description": "Kickstart with our curated starter architecture, and save development time."
+          },
+          {
+            "icon": "⚡",
+            "title": "High Performance",
+            "description": "Experience seamless and high-performance applications, optimized for speed and responsiveness."
+          }
+        ],
+        "cards": [
+          {
+            "image": "https://www.angularminds.com/tech-banners/pwa-react-tech-stack.svg",
+            "title": "React + PWA",
+            "tags": ["PWA", "React"],
+            "description": "The combination of React and PWA is lucrative in delivering exceptional outcomes. React's component-based architecture and focus on performance perfectly complement PWAs' need for modularity and speed. With React, we smoothly integrate offline functionality and leverage a vast developer community for support. We successfully furnish highly interactive and responsive PWA applications that are engaging and have painless installation."
+          }
+    
+      ,{
+        "image": "https://www.angularminds.com/tech-banners/pwa-angular-tech-stack.svg",
+        "title": "Angular + PWA",
+        "tags": ["NodeJS", "Apollo", "GraphQL"],
+        "description": "Angular’s emphasis on components, modules, and data binding, creates a solid foundation for building complex PWAs. Additionally, Angular’s built-in routing keeps the progressive web applications easily navigating and organized. When we blend the core PWA features like service workers for offline functionality and the ability to deliver real-time updates, you get an engaging user experience that keeps the users coming back for more."
+      },   {
+            "image": "https://www.angularminds.com/tech-banners/pwa-vuejs-tech-stack.svg",
+            "title": "Vue.js + PWA",
+            "description": "Vue.js and PWA are ideal for building fast and engaging web apps. Vue's ease of use and reactive data binding make development a breeze, while PWAs add offline functionality and app-like features. The result is a large user base that is satisfied with your application and services. Vue's lightweight nature ensures your PWA loads quickly, keeping your users engaged for extended periods."
+          },
+          {
+            "image": "https://www.angularminds.com/tech-banners/pwa-nodejs-tech-stack.svg",
+            "title": "Node.js + PWA",
+            "description": "PWA backends need to be robust and Node.js is a brilliant option for that. Node.js excels at handling multiple requests at once, thanks to its non-blocking I/O model. This is perfect for real-time features and highly interactive PWAs. Plus, Node.js makes real-time communication a breeze, enabling features like push notifications and chat."
+          }    ,
+          {
+            "image": "https://www.angularminds.com/tech-banners/pwa-firebase-tech-stack.svg",
+            "title": "Firebase + PWA",
+            "description": "Firebase offers a suite of cloud-based features that completely align with PWAs. The Firebase Authentication makes logging in convenient for users, removing friction and boosting engagement. Firebase Realtime Database also keeps everything in sync across devices. Firebase gives your PWAs the scalability, reliability, and development ease all very necessary for your PWA’s success."
+          }         
+    
+  
+        ]
+      },
+      "coreCompetencies": {
+        "head": "PWA Excellence Unleashed",
+        "heading": "Our PWA Core Competencies",
+        "subheading": "In order to capture user engagement, offline access, and quality assurance, our team at Angular Minds acquired knowledge of a wide spectrum of libraries and associated technologies to serve you better. Our core competencies include:",
+        "items": [
+          {
+            "title": "PWA SDK",
+            "description": "PWA SDKs furnish pre-built tools and libraries that streamline the development process for core PWA functionalities. We understand that the PWA landscape is diverse, and the optimal PWA development approach depends on your specific project requirements. Many SDKs also adhere to industry best practices, promoting code quality, and long-term maintainability.",
+            "icon": "https://www.angularminds.com/tech-logos/pwa.svg"
+          },
+          {
+            "title": "GetX",
+            "description": "GetX is a lightweight framework for custom-creating efficient mobile applications in Flutter and Dart. It provides a distinctive approach to handling the application state, a vital aspect for maintaining data consistency within your PWA. GetX’s reactive programming style can result in faster development cycles and easier code maintenance, allowing us to deliver your PWA smoothly.",
+            "icon": "https://www.angularminds.com/tech-logos/getx.svg"
+          },
+          {
+            "title": "Provider",
+            "description": "Provider package, a popular state management solution for PWAs beneficial for PWAs built with various frameworks, including Angular. Provider is not framework-specific, allowing it to be seamlessly integrated with Angular and other frameworks for building PWAs, offering flexibility in development.",
+            "icon": "https://www.angularminds.com/tech-logos/pwa.svg"
+          },
+          {
+            "title": "Dio",
+            "description": "Dio is a popular HTTP client library used in Flutter development and its benefits go beyond just Flutter. It provides a user-friendly API for making network requests and data-fetching processes from servers and APIs. Dio can integrate with service workers, a core PWA technology, to enable features like caching data for offline access and enhancing UX.",
+            "icon": "https://www.angularminds.com/tech-logos/pwa.svg"
+          },
+          {
+            "title": "RxDart",
+            "description": "RxDart is a powerful tool for building reactive and data-driven PWA applications. RxDart offers operators and mechanisms to manage the flow of data within your PWA, ensuring a smooth and reactive user experience. Also, RxDart provides powerful tools for managing application state within your PWA, aligning with Angular’s built-in state management solutions like NgRx.",
+            "icon": "https://www.angularminds.com/_next/image?url=%2Ftech-logos%2Frx-dart-192.png&w=48&q=75"
+          }
+        
+          ]
+      },
+    "projects": [
+    {
+        "backgroundImage": "assets/icons/converted_image.jpg",
+    "title": "Drive Organic Traffic with Progressive Web Apps",
+    "description": "Our PWA development offers comprehensive services from development to maintenance, using the best tools for your project's success.",
+    "btnText": "Book A Call",
+    "btnLink": "/contact",
+    "btnColor": "bg-purple text-purple-1000 px-6 py-3 rounded-md",
+    "btnHoverColor": "hover:bg-purple-600 hover:text-white",
+    "bgColor": "#4B0082",
+    "logo": "https://www.angularminds.com/tech-logos/pwa.svg"
+
+          
+          }
+  ]
+  }
+    

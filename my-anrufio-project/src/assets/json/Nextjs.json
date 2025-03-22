@@ -177,7 +177,7 @@
       "description": "Our expert team is ready to turn your ideas into innovative digital solutions. Let's build something amazing together!",
       "btnText": "Book A Call",
       "btnLink": "/contact",
-      "btnColor": "bg-blue-500 text-white",
+      "btnColor": "bg-white text-blue-800",
       "btnHoverColor": "hover:bg-blue-700 hover:text-white",
       "bgColor": "#2563eb", 
       "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
