@@ -20,10 +20,14 @@ import { FirebaseComponent } from './expertise/firebase/firebase.component';
 import { SeverlessComponent } from './expertise/severless/severless.component';
 import { ReactNativeComponent } from './expertise/react-native/react-native.component';
 import { NextjsComponent } from './expertise/nextjs/nextjs.component';
+import { Blog2Component } from './blog2/blog2.component';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'blog', component: BlogComponent },
+  { path: 'blog', component: Blog2Component },
+  { path: 'program/:title', component: BlogDetailsComponent }, // Dynamic route for program details
+
   { path: 'case-study', component: CaseStudyComponent },
   {
     path: 'product-engineering-services',

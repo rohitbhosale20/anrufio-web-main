@@ -1,0 +1,38 @@
+{ 
+  "blog_section": {
+    "title": "Blogs & Tutorials from Angular Minds",
+    "description": "Dive into Angular Minds technology updates, company news, and educational content on how developers and companies can leverage modern technology to build web and mobile applications."
+  },
+  "programs": [
+    {
+      "category": "Most Popular",
+      "programs": [
+        {
+          "title": "PMP® Certification Training",
+          "image": "https://s3.amazonaws.com/angularminds.com/blog/cta/top-techniques-for-your-react-performance-optimization-195b38b9c7a.webp",
+          "duration": "4 Weeks",
+          "cohort_start": "5th Apr '25",
+          "description": "The PMP® Certification Training is designed to help professionals manage projects efficiently with globally recognized standards.",
+          "link": "#"
+        },
+        {
+          "title": "Advanced Executive Program in Cybersecurity",
+          "image": "https://s3.amazonaws.com/angularminds.com/blog/cta/top-techniques-for-your-react-performance-optimization-195b38b9c7a.webp",
+          "duration": "6 Months",
+          "cohort_start": "8th Apr '25",
+          "description": "Learn cutting-edge cybersecurity techniques, risk assessment strategies, and threat mitigation approaches with this advanced executive program.",
+          "link": "#"
+        },
+        {
+          "title": "Certified ScrumMaster® (CSM)",
+          "image": "https://s3.amazonaws.com/angularminds.com/blog/cta/top-techniques-for-your-react-performance-optimization-195b38b9c7a.webp",
+          "duration": "3 Days",
+          "cohort_start": "5th Apr '25",
+          "description": "AngularJS, developed by Google, is a powerful JavaScript framework that simplifies the process of building dynamic web applications. Angular JS is particularly useful in application development, especially for implementing form validation and creating responsive single-page applications. AngularJS simplifies the development of web applications. One of the key architectural patterns that AngularJS follows is the Model-View-Controller (MVC) pattern. Understanding the MVC design pattern is crucial for developers to create structured and maintainable applications. In this blog, we will explore the MVC pattern in AngularJS, its components, advantages, and how to implement it in real-world applications..."
+        ,
+          "link": "#"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<div class="container mx-auto px-4 py-6 flex flex-col lg:flex-row gap-8">
+    <!-- Left Section (Scrollable Content) -->
+    <div class="lg:w-2/3 overflow-y-auto h-screen">
+      <div *ngIf="program" class="bg-white p-6 rounded-xl shadow-lg">
+        <h2 class="text-2xl font-bold">{{ program.title }}</h2>
+        <img *ngIf="program.image" [src]="program.image" class="rounded-md mb-3 w-full" [alt]="program.title">
+        <p class="text-gray-600">Duration: {{ program.duration }}</p>
+        <p class="text-gray-600">Cohort Starts: {{ program.cohort_start }}</p>
+        <p class="text-gray-700">{{ program.description || 'No additional details available.' }}</p>
+        <a *ngIf="program.link" [href]="program.link" class="text-blue-600 font-semibold mt-2 inline-block">Enroll Now</a>
+      </div>
+  
+      <!-- Show message if no program found -->
+      <div *ngIf="!program" class="text-center text-gray-600">
+        <p>Program not found.</p>
+      </div>
+    </div>
+  
+    <!-- Right Section (Sticky Form) -->
+    <div class="lg:w-1/3">
+      <div class="sticky top-20 bg-white p-6 rounded-xl shadow-lg">
+        <h3 class="text-xl font-bold mb-4">Enroll Now</h3>
+        <form>
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+            <input type="text" id="name" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+          </div>
+          <div class="mb-4">
+            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+            <input type="text" id="phone" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+          </div>
+          <div class="mb-4">
+            <label for="company" class="block text-sm font-medium text-gray-700">Company Name</label>
+            <input type="text" id="company" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+          </div>
+          <div class="mb-4">
+            <label for="job" class="block text-sm font-medium text-gray-700">Job Title</label>
+            <input type="text" id="job" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+          </div>
+          <div class="mb-4">
+            <label for="contact" class="block text-sm font-medium text-gray-700">Preferred Mode of Contact</label>
+            <select id="contact" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+              <option>Email</option>
+              <option>Phone</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium text-gray-700">Message/Comments</label>
+            <textarea id="message" rows="3" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
