@@ -4,6 +4,7 @@ import { BlogComponent } from './blog/blog/blog.component';
 import { CaseStudyComponent } from './blog/case-study/case-study.component';
 import { ProductEngineeringServicesComponent } from './our-services/product-engineering-services/product-engineering-services.component';
 import { GenerativeAiDevelopmentComponent } from './our-services/generative-ai-development/generative-ai-development.component';
+import { ReactComponent } from './common-component/expertise/react/react.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,4 +18,15 @@ export const routes: Routes = [
     path: 'generative-ai-development-company',
     component: GenerativeAiDevelopmentComponent,
   },
+  {
+    path: 'react',
+    component: ReactComponent,
+  }
+  // ,{
+  //   path: 'Vuejs',
+  //   component: VeujsComponent,
+  // },{
+  //   path: 'Nodejs',
+  //   component: NodejsComponent,
+  // }
 ];

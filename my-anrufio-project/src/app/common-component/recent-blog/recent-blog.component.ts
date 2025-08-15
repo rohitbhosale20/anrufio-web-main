@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -16,5 +16,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './recent-blog.component.css'
 })
 export class RecentBlogComponent {
+  @Input() data: any[] = []; // Accepts an array of blog posts as input
 
 }
