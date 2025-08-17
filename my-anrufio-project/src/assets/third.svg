@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title3 desc3">
+  <title id="title3">Best React IDE &amp; Editor Tools</title>
+  <desc id="desc3">Editor window with React emblem and tool icons</desc>
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#06b6d4"></stop>
+      <stop offset="1" stop-color="#22c55e"></stop>
+    </linearGradient>
+    <filter id="soft3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.15"></feDropShadow>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="#f8fafc"></rect>
+  <g filter="url(#soft3)">
+    <rect x="40" y="40" width="720" height="370" rx="16" fill="#ffffff"></rect>
+  </g>
+
+  <!-- Editor header -->
+  <rect x="40" y="40" width="720" height="44" rx="16" fill="#0f172a"></rect>
+  <circle cx="66" cy="62" r="6" fill="#ef4444"></circle>
+  <circle cx="86" cy="62" r="6" fill="#f59e0b"></circle>
+  <circle cx="106" cy="62" r="6" fill="#22c55e"></circle>
+  <text x="130" y="68" font-family="Inter, Arial" font-size="14" fill="#e2e8f0">editor.jsx — React App</text>
+
+  <!-- Sidebar -->
+  <rect x="56" y="100" width="160" height="294" rx="10" fill="#f1f5f9"></rect>
+  <rect x="64" y="112" width="144" height="14" rx="6" fill="#e2e8f0"></rect>
+  <rect x="64" y="134" width="120" height="14" rx="6" fill="#e2e8f0"></rect>
+  <rect x="64" y="156" width="96" height="14" rx="6" fill="#e2e8f0"></rect>
+  <rect x="64" y="178" width="140" height="14" rx="6" fill="#e2e8f0"></rect>
+
+  <!-- Code area -->
+  <rect x="228" y="100" width="516" height="294" rx="10" fill="#0b1220"></rect>
+  <!-- Lines -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12">
+    <text x="244" y="130" fill="#94a3b8">import</text>
+    <text x="289" y="130" fill="#38bdf8">React</text>
+    <text x="330" y="130" fill="#94a3b8">from</text>
+    <text x="364" y="130" fill="#22c55e">'react'</text>
+
+    <text x="244" y="154" fill="#94a3b8">export default function</text>
+    <text x="412" y="154" fill="#38bdf8">App</text>
+    <text x="446" y="154" fill="#94a3b8">()</text>
+    <text x="244" y="178" fill="#94a3b8">{</text>
+    <text x="260" y="202" fill="#22c55e">return</text>
+    <text x="312" y="202" fill="#94a3b8">(</text>
+    <text x="328" y="226" fill="#eab308">&lt;h1&gt;</text>
+    <text x="372" y="226" fill="#cbd5e1">Hello React</text>
+    <text x="460" y="226" fill="#eab308">&lt;/h1&gt;</text>
+    <text x="312" y="250" fill="#94a3b8">)</text>
+    <text x="244" y="274" fill="#94a3b8">}</text>
+  </g>
+
+  <!-- React emblem -->
+  <g transform="translate(620,120) scale(0.7)">
+    <circle cx="120" cy="90" r="18" fill="url(#g3)"></circle>
+    <ellipse cx="120" cy="90" rx="90" ry="36" fill="none" stroke="#22d3ee" stroke-width="8"></ellipse>
+    <ellipse cx="120" cy="90" rx="90" ry="36" transform="rotate(60 120 90)" fill="none" stroke="#22d3ee" stroke-width="8"></ellipse>
+    <ellipse cx="120" cy="90" rx="90" ry="36" transform="rotate(-60 120 90)" fill="none" stroke="#22d3ee" stroke-width="8"></ellipse>
+  </g>
+
+  <!-- Tool badges -->
+  <g font-family="Inter, Arial" font-size="12" fill="#0f172a">
+    <rect x="248" y="330" rx="10" width="110" height="28" fill="#ecfeff" stroke="#bae6fd"></rect>
+    <text x="264" y="348" fill="#0369a1">VS Code</text>
+
+    <rect x="370" y="330" rx="10" width="120" height="28" fill="#f0fdf4" stroke="#bbf7d0"></rect>
+    <text x="386" y="348" fill="#166534">WebStorm</text>
+
+    <rect x="502" y="330" rx="10" width="140" height="28" fill="#fff7ed" stroke="#fed7aa"></rect>
+    <text x="518" y="348" fill="#9a3412">Vite + TS</text>
+  </g>
+</svg>

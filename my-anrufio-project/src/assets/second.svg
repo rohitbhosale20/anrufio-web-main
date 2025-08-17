@@ -1,0 +1,47 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title2 desc2">
+  <title id="title2">Angular Dynamic Forms</title>
+  <desc id="desc2">Angular logo with a dynamic form illustration</desc>
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#ef4444"></stop>
+      <stop offset="1" stop-color="#f59e0b"></stop>
+    </linearGradient>
+    <filter id="soft2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.15"></feDropShadow>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="#f8fafc"></rect>
+  <g filter="url(#soft2)">
+    <rect x="40" y="40" width="720" height="370" rx="20" fill="#ffffff"></rect>
+  </g>
+
+  <!-- Angular shield -->
+  <g transform="translate(90,110)">
+    <path d="M120 0 0 42 20 180 120 230 220 180 240 42z" fill="#dd0031"></path>
+    <path d="M120 20 30 48 46 170 120 206 194 170 210 48z" fill="#c3002f"></path>
+    <path d="M120 60 86 160h28l6-20h36l6 20h28L120 60zm14 58h-28l14-44 14 44z" fill="#fff"></path>
+  </g>
+
+  <!-- Title -->
+  <text x="360" y="120" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#0f172a">
+    Build Dynamic Forms
+  </text>
+  <rect x="360" y="135" width="220" height="6" rx="3" fill="url(#g2)"></rect>
+
+  <!-- Form mock -->
+  <g font-family="Inter, Arial" font-size="14" fill="#0f172a">
+    <rect x="360" y="170" width="360" height="210" rx="14" fill="#f8fafc" stroke="#e5e7eb"></rect>
+    <!-- Field 1 -->
+    <text x="380" y="205" fill="#475569">Full Name</text>
+    <rect x="380" y="215" width="300" height="34" rx="8" fill="#ffffff" stroke="#e5e7eb"></rect>
+    <!-- Field 2 -->
+    <text x="380" y="260" fill="#475569">Email</text>
+    <rect x="380" y="270" width="300" height="34" rx="8" fill="#ffffff" stroke="#e5e7eb"></rect>
+    <!-- Dynamic add/remove -->
+    <text x="380" y="315" fill="#475569">Skills</text>
+    <rect x="380" y="325" width="220" height="34" rx="8" fill="#ffffff" stroke="#e5e7eb"></rect>
+    <rect x="610" y="325" width="70" height="34" rx="8" fill="#ecfeff" stroke="#bae6fd"></rect>
+    <text x="632" y="347" font-size="12" fill="#0369a1">+ Add</text>
+  </g>
+</svg>
